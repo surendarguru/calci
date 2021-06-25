@@ -6,7 +6,7 @@
         <input type="date" id="d1" class="form-control" name="date1" ngModel placeholder="Enter date">
         <label for="am" class="form-label mt-3" style="color: white;">ENTER AMOUNT:</label>
         <input type="number" id="am" class="form-control " name="amount" ngModel placeholder="Enter amount">
-        <button class="btn btn-success mt-3" style=" margin: auto; display: block;" >Calculate</button>
+        <button class="btn btn-outline-light mt-3" style=" margin: auto; display: block;" >Calculate</button>
     </form>
     <br><br>
     <div *ngIf = st>
@@ -14,9 +14,9 @@
             <thead>
               <tr>
                 <th scope="col" >Months:</th>
-                <th scope="col" >Principle-Amount:</th>
+                <th scope="col" >Principle:</th>
                 <th scope="col">Interest:</th>
-                <th scope="col" >Total-Amount:</th>
+                <th scope="col" >Total-Amt:</th>
                 
                
               </tr>
@@ -24,9 +24,9 @@
             <tbody>
               <tr>
                 <td >{{newcount}}</td>
-                <td >{{count}}</td>
-                <td >{{int}}</td>
-                <td >{{amt}}</td>
+                <td ><span>&#8377;</span>{{count}}.00</td>
+                <td ><span>&#8377;</span>{{int}}.00</td>
+                <td ><span>&#8377;</span>{{amt}}.00</td>
               
               </tr>
               
