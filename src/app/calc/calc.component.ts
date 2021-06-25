@@ -36,7 +36,8 @@ export class CalcComponent implements OnInit {
     console.log(`Difference is ${this.current.diff(this.date, 'days')} day(s)`);
     console.log(`Difference is ${this.current.diff(this.date, 'months')} month(s)`);
     this.newcount = this.current.diff(this.date, 'months');
-    console.log(`${this.newcount} is the months diff`)
+    console.log(`${this.newcount} is the months diff`);
+    this.count=(ref.value.amount);
     //this.count=this.current - this.date;
     //console.log(this.count)
     // this.month = (Math.floor(((this.current)-(this.date))/(this.days)));
