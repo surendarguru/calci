@@ -40,6 +40,9 @@ export class CalcComponent implements OnInit {
     this.st2 = true;
     console.log("hi")
   }
+  new(){
+    this.st2 = false;
+  }
   onSubmit(ref)
   {
     this.st = true;
